@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Lacquer&display=swap" rel="stylesheet"> -->
+    <!-- <link rel='icon' href='../../favicon.cc' type='image/x-icon' /> -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/lacquer-v2-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="/fonts/lacquer-v2-latin-regular.woff" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/lacquer-v2-latin-regular.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/svg" href="/fonts/lacquer-v2-latin-regular.svg" crossorigin>
+    <link rel="preload" as="font" type="font/eot" href="/fonts/lacquer-v2-latin-regular.eot" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/lacquer-v2-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff" href="/fonts/lacquer-v2-latin-regular.woff" crossorigin>
+    <link rel="preload" as="font" type="font/ttf" href="/fonts/lacquer-v2-latin-regular.ttf" crossorigin>
+    <link rel="preload" as="font" type="font/svg" href="/fonts/lacquer-v2-latin-regular.svg" crossorigin>
+    <link rel="preload" as="font" type="font/eot" href="/fonts/lacquer-v2-latin-regular.eot" crossorigin>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" href="#"> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <title>system32 🇵🇭🇸🇬 - Official Website</title>
+  </head>
+  <body onload="trackInit()">
+    <div class="home">
+      <div id="modal">
+        <button onclick="closeOverlayModal()" class="background-btn"></button>
+        <div class="video-con">
+          <img id="exit-cross" src="/assets/images/exit-cross.svg"></img>
+          <iframe id="video-popup" width="560" height="600"
+            src="https://www.youtube.com/embed/b0fW5Tg6GHY"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+      <button id="burger-menu" onclick="toggleMenu()">
+      <img src="/assets/images/burger-new.svg" ></img>
+      </button>
+      <div id="menu">
+        <img src="/assets/images/menu-cross.svg" id="menu-cross" />
+        <ul class="menu-ul">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#tour">Gigs</a>
+          </li>
+          <li>
+            <a href="#collection">Collection</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#band">The Band</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+          <li class="close-menu-button">
+            <button onclick="toggleMenu()">Close menu</button>
+          </li>
+        </ul>
+      </div>
+      <nav class="navbar" id="top-menu">
+        <ul class="nav-ul">
+          <li>
+            <a href="#tour">Gigs</a>
+          </li>
+          <li>
+            <a href="#collection">Collection</a>
+          </li>
+          <li>
+            <a href="#gallery">Gallery</a>
+          </li>
+          <li>
+            <a href="#band">The Band</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <img id="corner-img" src="/assets/images/video.svg"></img>
+      <div class="title-wrapper">
+        <h1 class="system32-header">
+          <a id="system32Link" href="/">system32</a>
+        </h1>
+        <!-- <h2 class="an">IN</h2> -->
+        <h2 class="system32-subheader">🇵🇭 Est. 2017 🇸🇬</h2>
+      </div>
+      <div class="down-btn">
+        <a href="#tour">
+        <img class="down-pic" src="/assets/images/down-pic.svg"></img>
+        </a>
+      </div>
+      <div class="player-con">
+        <audio id="player" ontimeupdate="updateProgress()">
+          <source id="source">
+        </audio>
+        <div class="controls">
+          <i class="back icons" onclick="lastTrack()"></i>
+          <i class="play-pause icons" onclick="playAudio()" id="play"></i>
+          <i class="next icons" onclick="next()"></i>
+          <progress id="progress" value="0" max="100"></progress>
+          <span id="currentlyPlayingSong">
+          <span id="currentSong"></span>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div id="tour"></div>
+    <h1 id="tourTitle">2024 GIGS</h1>
+    <div class="dates-con">
+      <table>
+        <tr>
+          <th>date</th>
+          <th>venue</th>
+          <th>country</th>
+        </tr>
+        <tr class="row-white">
+          <td class="date">28 JUL</td>
+          <td>Kingz LIVE</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr>
+          <td class="date">23 JUN</td>
+          <td>Kingz Bar</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr class="row-white">
+          <td class="date">16 JUN</td>
+          <td>Kingz LIVE</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr>
+          <td class="date">26 MAY</td>
+          <td>Kingz Bar</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr class="row-white">
+          <td class="date">31 MAR</td>
+          <td>Kingz Bar - 
+            <span style="color: red;">Postponed</span>
+          </td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr>
+        <tr>
+          <td class="date">22 MAR</td>
+          <td>Social House Makati</td>
+          <td>Philippines 🇵🇭 </td>
+        </tr>
+        <tr class="row-white">
+          <td class="date">17 MAR</td>
+          <td>Kingz LIVE</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+        <tr>
+          <td class="date">14 JAN</td>
+          <td>Kingz Bar</td>
+          <td>Singapore 🇸🇬 </td>
+        </tr>
+      </table>
+    </div>
+    <div id="collection" class="collection">
+      <h1 class="titles">Discography</h1>
+      <div class="videoFullCon" id="fullCon">
+        <iframe class="videoFull" id="videoFl" width="350" height="400" src="" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="videoGrid">
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg" ></img>
+          <video class="colVid" poster="/assets/video-placeholder/paasa.png" onclick="fullVideo(event)" data-src="https://www.youtube.com/embed/RFBuH8abMDo">
+            <source class="colSource" value="b0fW5Tg6GHY"  src="https://www.youtube.com/embed/RFBuH8abMDo"
+              type="video/mp4">
+          </video>
+          <h2 class="colVidHeaders">"Paasa",
+            <span class="orange">2021</span>
+          </h2>
+        </div>
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img>
+          <video class="colVid" onclick="fullVideo(event)" poster="/assets/video-placeholder/tomagotchi.png" data-src="https://www.youtube.com/embed/b0fW5Tg6GHY">
+            <source class="colSource" value="V2xT6V_HwX4" src="https://www.youtube.com/embed/b0fW5Tg6GHY"
+              type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+          <h2 class="colVidHeaders">"Tomagotchi",
+            <span class="orange">2022</span>
+          </h2>
+        </div>
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img>
+          <video class="colVid" poster="/assets/video-placeholder/sepanx.png" onclick="fullVideo(event)" data-src="https://www.youtube.com/embed/opD4mItOHMM" >
+            <source class="colSource" src="https://www.youtube.com/embed/opD4mItOHMM" type="video/mp4">
+            Your browser does
+            not support HTML5 video.
+          </video>
+          <h2 class="colVidHeaders">"Sepanx",
+            <span class="orange">2020</span>
+          </h2>
+        </div>
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img>
+          <video class="colVid" poster="/assets/video-placeholder/findingninong.png" onclick="fullVideo(event)" data-src="https://www.youtube.com/embed/3lB5FUrGhLs">
+            <source class="colSource" src="https://www.youtube.com/embed/3lB5FUrGhLs" type="video/mp4">
+            Your browser does
+            not support HTML5 video.
+          </video>
+          <h2 class="colVidHeaders">"Finding Ninong",
+            <span class="orange">2020</span>
+          </h2>
+        </div>
+        <!-- <div class="videoCon"><img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img><video class="colVid" poster="/assets/video-placeholder/guro.png" onclick="fullVideo(event)" data-src="https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/6718335390845095173"><source class="colSource" src="https://www.tiktok.com/oembed?url=https://www.tiktok.com/@scout2015/video/6718335390845095173" type="video/mp4"> Your browser does
+          not support HTML5 video.
+          </video><h2 class="colVidHeaders">"Guro",
+          <span class="orange">2022</span></h2></div> -->
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img>
+          <video class="colVid" poster="/assets/video-placeholder/sugod.png" onclick="fullVideo(event)" data-src="https://www.youtube.com/embed/ZPWHkq1Ha2E">
+            <source class="colSource" src="https://www.youtube.com/embed/ZPWHkq1Ha2E" type="video/mp4">
+            Your browser does
+            not support HTML5 video.
+          </video>
+          <h2 class="colVidHeaders">"Sugod",
+            <span class="orange">2020</span>
+          </h2>
+        </div>
+        <div class="videoCon">
+          <img class="galleryPlay" onclick="phoneVideo()" src="/assets/images/play-btn.svg"></img>
+          <video class="colVid" poster="/assets/video-placeholder/pasko.png" onclick="fullVideo(event)" data-src="https://www.youtube.com/embed/9YK0BkWLoGk">
+            <source class="colSource" src="https://www.youtube.com/embed/9YK0BkWLoGk" type="video/mp4">
+            Your browser does
+            not support HTML5 video.
+          </video>
+          <h2 class="colVidHeaders">"Pasko",
+            <span class="orange">2020</span>
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div id="gallery" class="gallery">
+      <div id="gallery-modal">
+        <div class="imgCon">
+          <img id="exit-modal" src="/assets/images/exit-cross.svg" onclick="closeModal()"></img>
+          <img id="clickedImg" src="/assets/gallery/img3@2x.png"></img>
+        </div>
+      </div>
+      <h1 class="titles" id="gallery-title">Photo Wall</h1>
+      <div class="gallery-grid">
+        <img src="/assets/gallery/img1.png" class="gallery-img n1" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img2.png" class="gallery-img n2" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img3.png" class="gallery-img n3" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img4.png" class="gallery-img n4" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img5.png" class="gallery-img n5" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img6.png" class="gallery-img n6" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img7.png" class="gallery-img n7" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img8.png" class="gallery-img n8" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img9.png" class="gallery-img n9" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img10.png" class="gallery-img n10" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img11.png" class="gallery-img n11" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/img13.png" class="gallery-img n13" onclick="imgGallery()"></img>
+        <img src="/assets/gallery/image15.png" class="gallery-img n14" onclick="imgGallery()"></img>
+      </div>
+    </div>
+    <div id="band" class="theBand">
+      <h1 class="titles" id="bandTitle">WHO WE ARE</h1>
+      <div class="band-bio">
+        <p class="bio-p">
+          <strong class="bio-name"  style="font-size: 20px;">System32</strong> is a 4 piece punk, metal, alternative rock band from the Philippines that is currently based in Singapore. The band was formed in 2017 and is composed of IT Professionals working in the Lion city, with sundry backgrounds of musical influences and individually rich experiences in live music performances on stage.
+        </p>
+        <p class="bio-p">Our line up includes
+          <strong class="bio-name"> Marco Desdir </strong> as Lead Singer and Rythym guitarist,
+          <strong class="bio-name"> Dexter De Vera </strong> as Lead guitarist, backing vocals,
+          <strong class="bio-name"> Marwin Muega </strong> on Bass Guitar and
+          <strong class="bio-name"> Yuri Pangco </strong> on Drums. 
+        </p>
+      </div>
+      <div class="band-grid">
+        <div class="mate">
+          <h1 class="member-titles">Marco</h1>
+          <img class="member-img" src="/assets/images/vocals-2@2x.png" />
+        </div>
+        <div class="mate">
+          <h1 class="member-titles">Dexter</h1>
+          <img class="member-img" src="/assets/images/guitar-2@2x.png" />
+        </div>
+        <div class="mate">
+          <h1 class="member-titles">Marwin</h1>
+          <img class="member-img" src="/assets/images/bass-2@2x.png" />
+        </div>
+        <div class="mate">
+          <h1 class="member-titles">Yuri</h1>
+          <img class="member-img" src="/assets/images/drums-2@2x.png" />
+        </div>
+      </div>
+    </div>
+    <div class="blackHeader"></div>
+    <div id="contact">
+      <div class="form-con">
+        <h1 class="system32-header-form" id="system32inForm">system32</h1>
+        <h2 class="contact-headers" id="messageHeader">Leave us a
+          <span class="orange">message</span>
+        </h2>
+        <form action="send" method="POST">
+          <p id="formError">Form currently not working. Any messages can be sent to us through email.
+          </p>
+          <input type="text" name="name" id="name" placeholder="Name"></input>
+          <input type="text" id="email" placeholder="Email Address" name="email"></input>
+          <input type="text" id="message" placeholder="Enter Message" name="message"></input>
+          <input type="submit" id="submit" placeholder="Submit" disabled></input>
+        </form>
+      </div>
+      <div class="contact-right">
+        <!-- <h2 class="contact-headers">WANT MORE?</h2> -->
+        <div class="contact-con">
+          <div class="socials-left">
+            <h1 class="con-headers-1">FOLLOW US</h1>
+            <a href="https://www.facebook.com/system32.live" target="_blank">
+              <img src="/assets/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@system32.live" target="_blank">
+              <img src="/assets/images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://twitter.com/system32PH" target="_blank">
+              <img src="/assets/images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/system32.live" target="_blank">
+              <img src="/assets/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/0BhsPxtRqj01q8iK8xy4pU?si=zJgpeJbyTHGZ1L0hBZWURQ" target="_blank">
+              <img src="/assets/images/spotify.png" alt="Spotify">
+            </a>
+            <a href="mailto:info@system32.live" target="_blank">
+              <img src="/assets/images/mail.png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div class="responsive-socials">
+          <h1 class="con-headers">FOLLOW US</h1>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/system32.live" target="_blank">
+            <img src="/assets/images/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.tiktok.com/@system32.live" target="_blank">
+            <img src="/assets/images/tiktok.png" alt="TikTok">
+            </a>
+            <a href="https://twitter.com/system32PH" target="_blank">
+            <img src="/assets/images/twitter.png" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/system32.live" target="_blank">
+            <img src="/assets/images/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://open.spotify.com/artist/0BhsPxtRqj01q8iK8xy4pU?si=zJgpeJbyTHGZ1L0hBZWURQ" target="_blank">
+            <img src="/assets/images/spotify.png" alt="Spotify">
+            </a>
+            <a href="mailto:info@system32.live" target="_blank">
+            <img src="/assets/images/mail.png" alt="Instagram">
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="spotify_artist"></div>
+          <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/0BhsPxtRqj01q8iK8xy4pU?utm_source=generator" width="100%" height="372" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div>
+        <h3 class="enquiries">ⓒ 
+          <span class="orange">System32 2024</span> All Rights Reserved 
+        </h3>
+      </div>
+    </div>
+     <!-- <div class="social-footer"><div class="socials"><h3 class="details">Facebook</h3><h3 class="details">Twitter</h3><h3 class="details">Instagram</h3></div><div class="contact"><h3 class="details">Website Enquiries</h3><h3 class="details">info@system32.live</h3><h3 class="details">xxx</h3></div></div> -->
+    <script type="text/javascript" src="/js/script.js"></script>
+  </body>
+</html>

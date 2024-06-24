@@ -1,0 +1,6 @@
+.well-known/pki-validation/
+certs/
+
+*.mp4
+
+/node_modules

@@ -1,0 +1,594 @@
+@media (max-width: 720px) {
+  .navbar {
+    display: none;
+  }
+
+  #burger-menu {
+    display: block;
+    cursor: pointer;
+    float: right;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 100;
+  }
+  /* #menu {
+    display: none;
+    background: rgba(9, 9, 9);
+    width: 100px;
+    padding: 0;
+    position: fixed;
+    margin-top: 0px;
+
+    right: 0px;
+
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 5px;
+    z-index: 2;
+  } */
+
+  /* #menu-cross {
+    position: absolute;
+    top: 2px;
+    left: 4px;
+    transform: scale(0.8);
+    cursor: pointer;
+  } */
+
+  .menu-ul {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+  }
+
+  .menu-ul a {
+    padding-bottom: 15px;
+    text-align: right;
+  }
+
+  .menu-ul li {
+    float: right;
+    text-align: right;
+  }
+
+  #corner-img {
+    display: none;
+  }
+}
+
+@media (max-width: 642px) {
+  #progress {
+    width: 40%;
+  }
+
+  .videoGrid {
+    margin: 0 0;
+  }
+
+  .videoCon {
+    margin-left: -3px;
+  }
+}
+
+@media (max-width: 642px) {
+  .body {
+    overflow-x: hidden;
+  }
+
+  /* 
+  #progress {
+    width: 60%;
+  } */
+
+  .home {
+    /* background-position-x: -420px;
+    background-position-y: 0px; */
+    background-position: 46% 0;
+  }
+
+  .title-wrapper {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .system32-header {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: 70px;
+  }
+
+  .an {
+    text-align: center;
+    margin: 0;
+    width: 100%;
+  }
+
+  .system32-subheader {
+    text-align: center;
+    background: rgba(9, 9, 9, 0.6);
+    width: 70%;
+
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .down-btn {
+    display: none;
+  }
+
+  /* .player-con {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center; 
+  } */
+
+  .controls {
+    width: 100%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    text-align: center;
+    }
+    
+  .icons {
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 30px;
+    height: 40px;
+
+  }
+
+  /*    Tour      */
+
+  table {
+    width: 90%;
+  }
+
+  th {
+    font-size: 20px;
+    /* font-size: 90%; */
+  }
+
+  td {
+    font-size: 17px;
+    /* font-size: 80%; */
+  }
+
+  /*   Collection     */
+  .section-title {
+    text-align: center;
+    margin-left: 0px;
+  }
+
+  .video-title {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .cntrl {
+    margin-top: 10px;
+  }
+
+  .fullscreen {
+    display: none;
+  }
+
+  .volume-cntrl {
+    display: none;
+  }
+
+  /*         Gallery         */
+  /* .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+ */
+
+  /*       The Band       */
+  .band-bio {
+    /* font-size: 17px; */
+    font-size: 85%;
+  }
+
+  /*      Contact         */
+
+  .bookus {
+    /* background: #242424; */
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-headers {
+    font-size: 40px;
+    /* margin-top: 20px;
+    margin-bottom: 0px; */
+    margin: auto;
+  }
+
+  .contact-h {
+    font-size: 20px;
+  }
+
+  .social-table {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  form input,
+  textarea {
+    width: 80%;
+  }
+
+  .social-footer {
+    width: 100%;
+    height: 55px;
+    /* border: 2px white solid; */
+    padding: 0;
+    padding-left: -50px;
+  }
+
+  .details {
+    font-size: 10px;
+  }
+
+  .socials {
+    margin-left: 0px;
+  }
+
+  .videoGrid {
+    margin: 0 5%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .galleryPlay {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -50px;
+    z-index: 20;
+    cursor: pointer;
+    display: block;
+  }
+
+  .videoFullCon {
+    margin: 0 auto;
+    width: 95%;
+    margin-bottom: 50px;
+  }
+
+  .videoFull {
+    width: 95%;
+    height: 200px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+
+  .form-con {
+    display: none;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+
+  /* 1st row */
+  .n1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .n2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .n3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .n4 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .n5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* display: none; */
+  }
+
+  /* 2nd row */
+  .n6 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* display: none; */
+  }
+
+  .n7 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .n8 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: none;
+  }
+
+  .n9 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    display: none;
+  }
+
+  /* 3rd row */
+  .n10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* display: none; */
+  }
+
+  .n11 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 4;
+    display: none;
+  }
+
+  .n13 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    display: none;
+  }
+
+  .n14 {
+    grid-column-start: 0;
+    grid-column-end: 0;
+    grid-row-start: 0;
+    grid-row-end: 0;
+    display: none;
+  }
+
+  .enquiries {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px 0;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #contact {
+    position: relative;
+    padding-bottom: 25px;
+  }
+
+  .contact-con {
+    display: none;
+  }
+
+  .responsive-contact {
+    background: #090909;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4);
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+    /* height: 200px; */
+  }
+
+  .responsive-socials {
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 0;
+    /* padding-top: 5px; */
+    /* height: 190px; */
+    /* background: #090909; */
+    /* box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.4); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+  }
+}
+
+@media (min-width: 643px) and (max-width: 1200px) {
+  .home {
+    background-position-y: 0px;
+  }
+}
+
+@media (min-width: 643px) and (max-width: 890px) {
+  #progress {
+    width: 40%;
+  }
+}
+
+@media (max-width: 362px) {
+  /* Tour */
+  table {
+    width: 80%;
+  }
+
+  th {
+    font-size: 16px;
+    /* font-size: 90%; */
+  }
+
+  td {
+    font-size: 12px;
+    /* font-size: 80%; */
+  }
+
+  /* Social Footer */
+  .social-footer {
+    grid-template-columns: 40% 60%;
+  }
+
+  .details {
+    font-size: 13px;
+  }
+
+  .responsive-contact {
+    height: 150px;
+  }
+
+  .responsive-socials {
+    margin-top: -60px;
+    width: 120px;
+  }
+
+  .contact-content {
+    font-size: 16px;
+  }
+
+  .con-headers {
+    font-size: 18px;
+    grid-template-columns: auto;
+  }
+
+  .enquiries {
+    margin-top: -10;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 640px) {
+  .cntrl {
+    transform: scale(0.8);
+  }
+}
+
+@media (min-width: 643px) and (max-width: 1032px) {
+  .videoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .videoFullCon {
+    margin: 0 auto;
+    width: 500px;
+    margin-bottom: 50px;
+  }
+
+  .videoFull {
+    width: 500px;
+    height: 300px;
+  }
+
+  /* 
+  #fullCon {
+    height: 100px;
+  } */
+}
+
+@media (min-width: 643px) {
+  .videoCon:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (min-width: 643px) and (max-width: 950px) {
+  .contact-con {
+    grid-template-columns: 45% 55%;
+  }
+
+  .con-headers {
+    font-size: 16px;
+  }
+
+  .contact-content {
+    font-size: 16px;
+  }
+}
+
+/* Tiktok video */
+.tiktok-video {
+  /* width: 320px; Set a fixed width for the video container */
+  /* height: 568px; Set a fixed height for the video container */
+  margin-top: -60px;
+  margin-bottom: 30px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 8px;
+  overflow: hidden; /* Ensure video iframe doesn't overflow */
+  }
+  
+.tiktok-video iframe {
+  background-color: #000000;
+  width: 100%; /* Make iframe responsive */
+  height: 400px; /* Set a fixed height for the iframe */
+  border: none; /* Remove iframe border */
+  display: block;
+}
+
+/* @media (max-width: 465) {
+  #progress {
+    width: 20px;
+    z-index: 10;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+  #currentSong {
+     width: 20px;
+    z-index: 10;
+    margin: 0;
+    padding: 0; 
+    display: hidden;
+  }
+
+  .videoGrid {
+    margin: 0 0;
+  }
+  .videoCon {
+    margin-left: -3px;
+  }
+} */
+
+

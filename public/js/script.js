@@ -118,14 +118,6 @@ const closeOverlayModal = () => {
   video.pause();
 }
 
-function closeOverlayModal() {
-  modal.style.display = "none";
-  // Pause the video when closing the modal
-  var iframeSrc = video.src;
-  video.src = iframeSrc; // This line effectively stops the video
-}
-
-
 // Burger menu functionality
 const burger = document.getElementById("burger-menu");
 const menu = document.getElementById("menu");

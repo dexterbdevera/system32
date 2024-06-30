@@ -270,11 +270,8 @@ li a {
   font-size: 90px;
 }
 .system32-header-form {
-  font-family: "High Tower Text", sans-serif;
-  padding: 0;
-  margin: 0;
-  margin-top: 40px;
-  font-size: 110px;
+  width: 70%;
+  margin-top: 50px;
 }
 
 #system32Link {
@@ -493,7 +490,7 @@ td {
 /*        Collection         */
 .collection {
   width: 100%;
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(133, 131, 131);
   padding-bottom: 120px;
   padding-top: 20px;
   position: relative;
@@ -867,7 +864,7 @@ td {
 
 /*                  The Band                */
 .theBand {
-  background-color: rgb(189, 189, 189);
+  background-color: rgb(133, 131, 131);
   color: #090909;
   width: 100%;
   padding-bottom: 5%;
@@ -908,11 +905,8 @@ td {
   display: -ms-grid;
   display: grid;
   grid-gap: 15px;
-
   margin: 0 12%;
-
   margin-bottom: 60px;
-
   -ms-grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
@@ -922,6 +916,11 @@ td {
   height: 100%;
   object-fit: cover;
   text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.mate:hover {
+  transform: scale(1.2);
 }
 
 .member-titles {

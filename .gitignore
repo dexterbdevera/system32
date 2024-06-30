@@ -1,6 +1,5 @@
 .well-known/pki-validation/
 certs/
-
 *.mp4
-
+.DS_Store
 /node_modules

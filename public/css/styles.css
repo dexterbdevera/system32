@@ -1243,3 +1243,13 @@ td {
   overflow: hidden; /* Ensure iframe content does not overflow */
   margin-top: 1px; /* Add margin to the top to separate from the social icons */
 }
+
+.center-text {
+  color: #ffffff; /* Text color */
+  font-size: 20px; /* Font size */
+  text-align: center; /* Center aligns the text horizontally */
+  /* margin: 0 70px; Adds 20px margin on the left and right sides */
+  /* max-width: 1000px; Optional: Limits the width of the centered content */
+  margin-left: 70px;
+  margin-right: 70px;  
+}
